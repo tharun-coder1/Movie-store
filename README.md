@@ -17,3 +17,9 @@
 * Open a second command terminal and run the command `npm run api` for a local JSON server.
 * Now to check the JSON server, navigate to `http://localhost:3000/`.
 * The json file will be updated if a movie is added from the 'add movie' component.
+
+## Screenshots
+
+![Home](./img/home.png).
+![Add Movie](./img/addmovie.png).
+![Movie Details](./img/moviedetail.png).
