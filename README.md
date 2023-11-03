@@ -19,12 +19,14 @@
 * The json file will be updated if a movie is added from the 'add movie' component.
 
 ## Screenshots
-
+-------
 * Home Component
 ![Home](./img/home.png).
 
+-------
 * Add movie Component
 ![Add Movie](./img/addmovie.png).
 
+---------
 * Movie details Component
 ![Movie Details](./img/moviedetail.png).
