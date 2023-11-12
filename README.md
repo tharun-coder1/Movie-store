@@ -1,5 +1,7 @@
 # Movie-store
 * This app is used to create a movie database which is built using Angular Framework. The home screen displays a list of movies already stored in database(JSON server). Each one redirects to a page with movie details listed. There is the "Add movie" component where one add movie.
+
+*The Backend implemenation for this application is implemented and present in my repository [Backend_for_MovieStore](https://github.com/tharun-coder1/Backend_for_MovieStore)
   
 ## Technologies used
 
