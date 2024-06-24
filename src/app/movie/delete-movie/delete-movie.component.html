@@ -1,0 +1,24 @@
+<div class="mx-auto m-5 h4 d-flex col-11 text-white">Delete a movie from the store by marking it for deletion
+<button class="mx-4 px-4 btn btn-primary" type="button" (click)="deleteMovie()">Delete</button>
+</div>
+  <ul class="row" *ngIf="ResultMovies.length > 0; else loading">
+    <li class="col-4" *ngFor="let movie of ResultMovies">
+      <a [routerLink]="movie.id">
+        <img [src]="movie.image" alt="{{ movie.name }}"/>
+      </a>
+      <br/>
+      <span class="h5 mx-auto">{{ movie.name }}</span>
+      <br/>
+      <input type="radio" class="form-check-input" (change)="selectedMovieId = movie.id">
+      <label class="form-check-label">Mark for Deletion</label>
+    </li>
+  </ul>
+  
+  <ng-template #loading>
+    <div class="p-2 mt-5 mx-auto display-4 font-weight-bold">
+  
+  <img src="/assets/movie.svg"   width ="150" height="150"/>
+  <img src="/assets/movie.svg"   width ="150" height="150"/>
+  Movies are loading  <span class="spinner-grow spinner-grow-sm"></span>  <span class="spinner-grow spinner-grow-sm"></span>  <span class="spinner-grow spinner-grow-sm"></span>
+    </div>
+  </ng-template>

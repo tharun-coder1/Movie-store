@@ -8,7 +8,6 @@ import { Movie } from '../models/movie.model';
 })
 export class MovieComponent implements OnInit {
 
-  // use decorator @Input so we can access the
   @Input() movie: Movie;
 
   constructor() { }

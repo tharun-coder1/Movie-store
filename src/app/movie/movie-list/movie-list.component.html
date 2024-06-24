@@ -1,18 +1,23 @@
-<!--if there are movies then show them in the DOM-->
-<ul *ngIf="movies$ | async as movies; else loading">
-  <li *ngFor="let movie of movies">
+<form class="mx-auto my-5 d-flex col-5" action="">
+  <input class="form-control me-2" type="text" #editedItem placeholder="Search Movies">
+  <button class="btn btn-primary" type="button" (click)="searchMovies(editedItem.value)">Search</button>
+</form>
+
+<ul class="row" *ngIf="filteredMovies.length > 0; else loading">
+  <li class="col-4" *ngFor="let movie of filteredMovies">
     <a [routerLink]="movie.id">
-      <img [src]="movie.image" />
+      <img [src]="movie.image" alt="{{ movie.name }}"/>
     </a>
+    <br/>
+    <span class="h5 mx-auto">{{ movie.name }}</span>
   </li>
 </ul>
 
 <ng-template #loading>
-  <ul >
-    <li
-      *ngFor="let movie of loadingMovies"
-    >
-      <img src="/assets/movie.svg"   width ="120" height="120"/>
-    </li>
-  </ul>
+  <div class="p-2 mt-5 mx-auto display-4 font-weight-bold">
+
+<img src="/assets/movie.svg"   width ="150" height="150"/>
+<img src="/assets/movie.svg"   width ="150" height="150"/>
+Movies are loading  <span class="spinner-grow spinner-grow-sm"></span>  <span class="spinner-grow spinner-grow-sm"></span>  <span class="spinner-grow spinner-grow-sm"></span>
+  </div>
 </ng-template>

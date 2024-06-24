@@ -3,6 +3,9 @@ import { MovieListComponent } from "./movie-list/movie-list.component";
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { MovieDetailComponent } from "./movie-detail/movie-detail.component";
+import { DeleteMovieComponent } from "./delete-movie/delete-movie.component";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   {
@@ -14,14 +17,21 @@ const routes: Routes = [
     component: AddMovieComponent,
   },
   {
+    path: "delete",
+    component: DeleteMovieComponent,
+  },
+  {
     path: ":id",
     component: MovieDetailComponent,
   },
+
 ];
 
-// it is specified that these are child routes
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [
+    CommonModule,
+    FormsModule,
+    RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
 export class MovieRoutingModule {}

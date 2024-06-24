@@ -20,6 +20,10 @@ export class MovieService {
     return this.http.get<Movie[]>(this.ROOT_URL).pipe(this.addDelay);
   }
 
+  deleteMovie(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.ROOT_URL}/${id}`);
+  }
+
   movieFromHttp(id: number) {
     return this.http.get<Movie>(`${this.ROOT_URL}/${id}`);
   }

@@ -23,12 +23,15 @@
 ## Screenshots
 -------
 * Home Component
+
 ![Home](./img/home.png).
 
 -------
 * Add movie Component
+
 ![Add Movie](./img/addmovie.png).
 
 ---------
 * Movie details Component
+
 ![Movie Details](./img/moviedetail.png).

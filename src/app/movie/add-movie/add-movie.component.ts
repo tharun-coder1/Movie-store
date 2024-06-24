@@ -27,6 +27,7 @@ export class AddMovieComponent implements OnInit {
   addMovie() {
     if (this.movieForm.valid) {
       this.movieService.addMovie(this.movieForm.value).subscribe((res) => {
+        alert(`"${this.movieForm.controls.name.value}" movie has been successfully added`);
         this.movieForm.reset();
         this.router.navigate(["/"]);
       });

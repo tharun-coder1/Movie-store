@@ -1,9 +1,16 @@
-<form [formGroup]="movieForm" (ngSubmit)="addMovie()">
+<form [formGroup]="movieForm" class="col-7" (ngSubmit)="addMovie()">
+  <div class="mx-auto h4  my-5">Add a movie to store by giving its details</div>
+  <input class="form-control" type="text" placeholder="Movie Name" formControlName="name" />
+  <input class="form-control" type="text" placeholder="Image URL" formControlName="image" />
+  <input class="form-control" type="text" placeholder="Genre" formControlName="genre" list="genres" />
+  <datalist id="genres">
+    <option  class="h6" value="Action">
+    <option class="h6"  value="Comedy">
+    <option class="h6"  value="Drama">
+    <option class="h6"  value="Horror">
+  </datalist>    
 
-  <input type="text" placeholder="Name" formControlName="name" />
-  <input type="text" placeholder="Image URL" formControlName="image" />
-  <input type="text" placeholder="Genre" formControlName="genre" />
-  <input type="text" placeholder="Release Year" formControlName="releaseYear"/>
+  <input class="form-control" type="text" placeholder="Year of Release" formControlName="releaseYear"/>
 
-  <button class="btn btn-success p-2" [disabled]="!movieForm.valid" type="submit">Add Movie</button>
+  <button class="ml-2 btn btn-success" [disabled]="!movieForm.valid" type="submit">Add Movie</button>
 </form>
