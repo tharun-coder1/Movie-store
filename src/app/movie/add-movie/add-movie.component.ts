@@ -14,6 +14,7 @@ export class AddMovieComponent implements OnInit {
     image: new UntypedFormControl("", [Validators.required]),
     genre: new UntypedFormControl("", [Validators.required]),
     releaseYear: new UntypedFormControl("", [Validators.required]),
+    description: new UntypedFormControl("", [Validators.required]),
   });
 
   constructor(

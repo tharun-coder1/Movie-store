@@ -11,6 +11,7 @@
   </datalist>    
 
   <input class="form-control" type="text" placeholder="Year of Release" formControlName="releaseYear"/>
-
+  <textarea class="form-control" placeholder="Description" rows="5" type="text" formControlName="description"></textarea>
+  <br/>
   <button class="ml-2 btn btn-success" [disabled]="!movieForm.valid" type="submit">Add Movie</button>
 </form>

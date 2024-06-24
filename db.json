@@ -1,25 +1,36 @@
 {
   "movies": [
     {
-      "name": "Aliens",
-      "image": "https://resizing.flixster.com/DmMucRxo-xjPjmQJNqq1bMjFjc8=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9384_p_v8_bk.jpg",
-      "genre": "Sci-Fi",
-      "releaseYear": "1986",
-      "id": 9
-    },
-    {
+      "id": 1,
       "name": "The Bourne Identity",
+      "genre": "Action",
       "image": "https://upload.wikimedia.org/wikipedia/en/a/ae/BourneIdentityfilm.jpg",
-      "genre": "Action",
       "releaseYear": "2002",
-      "id": 10
-    },
-    {
+       "description":"A man is picked up by a fishing boat, bullet-riddled and suffering from amnesia, before racing to elude assassins and attempting to regain his memory."
+      },
+      {
+      "id": 2,
+      "name": "Annihilation",
+      "genre": "Adventure",
+      "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2Mjc2NzYxNl5BMl5BanBnXkFtZTgwMTA2OTA1NDM@._V1_SY500_CR0,0,320,500_AL_.jpg",
+      "releaseYear": "2018",
+      "description":"A biologist signs up for a dangerous, secret expedition into a mysterious zone where the laws of nature don't apply."
+      },
+      {
+      "id": 3,
       "name": "Die Another Day",
-      "image": "https://static.wikia.nocookie.net/jamesbond/images/b/b2/Dieanotherdayposter.jpg",
       "genre": "Action",
+      "image": "https://static.wikia.nocookie.net/jamesbond/images/b/b2/Dieanotherdayposter.jpg",
       "releaseYear": "2002",
-      "id": 11
-    }
+       "description":"James Bond is sent to investigate the connection between a North Korean terrorist and a diamond mogul, who is funding the development of an international space weapon"
+      },
+      {
+      "id": 4,
+      "name": "Beast of Burden",
+      "genre": "Action",
+      "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyNTM3MDQ2NV5BMl5BanBnXkFtZTgwMDI5Nzk1NDM@._V1_SY500_CR0,0,336,500_AL_.jpg",
+      "releaseYear": "2018",
+      "description":"Sean Haggerty only has an hour to deliver his illegal cargo. An hour to reassure a drug cartel, a hitman, and the DEA that nothing is wrong. An hour to make sure his wife survives. And he must do it all from the cockpit of his Cessna"
+      }
   ]
 }
